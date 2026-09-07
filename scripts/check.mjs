@@ -30,9 +30,15 @@ for (const page of pages) {
   }
 }
 
-for (const slug of ['privacy', 'terms', 'refund']) {
+const expectedDocumentDates = {
+  privacy: ['2026-09-08', '生效日期：2026年9月8日'],
+  terms: ['2026-09-07', '生效日期：2026年9月7日'],
+  refund: ['2026-09-07', '生效日期：2026年9月7日'],
+};
+
+for (const [slug, [version, effectiveDate]] of Object.entries(expectedDocumentDates)) {
   const html = await readFile(path.join(projectRoot, slug, 'index.html'), 'utf8');
-  if (!html.includes('2026-09-07') || !html.includes('生效日期：2026年9月7日')) {
+  if (!html.includes(version) || !html.includes(effectiveDate)) {
     throw new Error(`${slug} 页面版本或生效日期不正确`);
   }
 }
