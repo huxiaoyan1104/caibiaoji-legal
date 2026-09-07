@@ -1,0 +1,14 @@
+{
+  "name": "caibiaoji-legal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "采标集隐私政策、服务协议与退款协议公开站",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
