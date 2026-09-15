@@ -32,8 +32,8 @@ for (const page of pages) {
 
 const expectedDocumentDates = {
   privacy: ['2026-09-08', '生效日期：2026年9月8日'],
-  terms: ['2026-09-07', '生效日期：2026年9月7日'],
-  refund: ['2026-09-07', '生效日期：2026年9月7日'],
+  terms: ['2026-09-08', '生效日期：2026年9月8日'],
+  refund: ['2026-09-08', '生效日期：2026年9月8日'],
 };
 
 for (const [slug, [version, effectiveDate]] of Object.entries(expectedDocumentDates)) {
