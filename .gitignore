@@ -1,2 +1,9 @@
 .DS_Store
 node_modules/
+build/
+site/.vitepress/cache/
+site/.vitepress/dist/
+site/privacy/
+site/terms/
+site/refund/
+site/index.md

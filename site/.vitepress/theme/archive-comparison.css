@@ -1,0 +1,148 @@
+.vp-doc .archive-comparison {
+  --archive-comparison-border: #e2e8e5;
+  --archive-comparison-surface: #f3faf5;
+  --archive-comparison-header: #e8f5ec;
+  --archive-comparison-heading: #23653d;
+  --archive-comparison-icon: #27834b;
+  --archive-comparison-check: #ffffff;
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--archive-comparison-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+}
+
+.dark .vp-doc .archive-comparison {
+  --archive-comparison-border: #34433c;
+  --archive-comparison-surface: #1b2b24;
+  --archive-comparison-header: #233b2e;
+  --archive-comparison-heading: #a4d9b6;
+  --archive-comparison-icon: #69ba86;
+  --archive-comparison-check: #152b1d;
+}
+
+.vp-doc .archive-comparison table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.vp-doc .archive-comparison tr {
+  border: 0;
+  background: transparent;
+}
+
+.vp-doc .archive-comparison th,
+.vp-doc .archive-comparison td {
+  min-width: 0;
+  padding: 19px 20px;
+  border: 0;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc .archive-comparison th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: var(--vp-c-bg-alt);
+  font-weight: 600;
+  white-space: normal;
+}
+
+.vp-doc .archive-comparison th:first-child,
+.vp-doc .archive-comparison td:first-child {
+  width: 46%;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc .archive-comparison th + th,
+.vp-doc .archive-comparison td + td {
+  width: 54%;
+  border-left: 1px solid var(--archive-comparison-border);
+}
+
+.vp-doc .archive-comparison tbody tr {
+  border-top: 1px solid var(--archive-comparison-border);
+}
+
+.vp-doc .archive-comparison th:last-child {
+  color: var(--archive-comparison-heading);
+  background: var(--archive-comparison-header);
+}
+
+.vp-doc .archive-comparison td:last-child {
+  color: var(--vp-c-text-1);
+  background: var(--archive-comparison-surface);
+}
+
+.vp-doc .archive-comparison-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.vp-doc .archive-comparison-check {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--archive-comparison-icon);
+}
+
+.vp-doc .archive-comparison-check::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--archive-comparison-check);
+  -webkit-mask: url('./icons/check.svg') center / contain no-repeat;
+  mask: url('./icons/check.svg') center / contain no-repeat;
+}
+
+.vp-doc .archive-comparison-label { display: none; }
+
+@media screen and (max-width: 639px) {
+  .vp-doc .archive-comparison table,
+  .vp-doc .archive-comparison tbody,
+  .vp-doc .archive-comparison tr,
+  .vp-doc .archive-comparison td {
+    display: block;
+    width: 100%;
+  }
+
+  .vp-doc .archive-comparison thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .vp-doc .archive-comparison tbody tr:first-child { border-top: 0; }
+
+  .vp-doc .archive-comparison td:first-child,
+  .vp-doc .archive-comparison td:last-child {
+    width: 100%;
+    padding: 15px 17px;
+    border-left: 0;
+  }
+
+  .vp-doc .archive-comparison-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .vp-doc .archive-comparison td:last-child .archive-comparison-label {
+    color: var(--archive-comparison-heading);
+  }
+}

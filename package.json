@@ -2,13 +2,18 @@
   "name": "caibiaoji-legal",
   "version": "1.0.0",
   "private": true,
-  "description": "采标集隐私政策、服务协议与退款协议公开站",
+  "description": "采标集操作手册与协议公开站",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "docs:build": "node scripts/docs-build.mjs"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4",
+    "vue": "3.5.42"
   }
 }
