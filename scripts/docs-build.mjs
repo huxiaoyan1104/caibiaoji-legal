@@ -39,7 +39,11 @@ for (const target of targets) {
     cwd: root, stdio: 'inherit', env: { ...process.env, DOCS_TARGET: target },
   });
   if (result.status !== 0) process.exit(result.status || 1);
-  if (target === 'oss') await cp(path.join(root, 'hub'), path.join(root, 'build/oss'), { recursive: true });
+  if (target === 'oss') {
+    await cp(path.join(root, 'hub'), path.join(root, 'build/oss'), { recursive: true });
+    // OSS's default error document must be a root-level object.
+    await cp(path.join(root, 'build/oss/caibiaoji/404.html'), path.join(root, 'build/oss/404.html'));
+  }
   const destination = target === 'oss' ? 'build/oss' : 'build/pages/caibiaoji-legal';
   await writeFile(path.join(root, destination, '.nojekyll'), '');
 }
