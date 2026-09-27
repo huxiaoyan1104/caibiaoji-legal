@@ -43,9 +43,11 @@ npm run docs:build
 
 ## OSS 发布
 
-将 `build/oss/` **里面的内容**上传到文档 Bucket 根目录，保留子目录。国内地址规划为 `https://docs.fun8.top/`，采标集文档位于 `/caibiaoji/`。
+将 `build/oss/` **里面的内容**上传到文档 Bucket 根目录，保留子目录。已上线的国内文档中心为 [docs.fun8.top](https://docs.fun8.top/)，[采标集文档](https://docs.fun8.top/caibiaoji/)位于 `/caibiaoji/`。
 
-在 OSS 静态网站托管中配置默认首页 `index.html`、子目录首页和错误页 `caibiaoji/404.html`，错误响应使用 HTTP 404。完成自定义域名、DNS 和 HTTPS 配置后，再验证实际访问结果。
+在 OSS 静态网站托管中配置默认首页 `index.html`、子目录首页和错误页 `404.html`，错误响应使用 HTTP 404。构建会自动把错误页复制到 OSS 产物根目录；控制台的默认错误页不能填写带斜杠的子目录路径。
+
+当前已完成自定义域名、DNS、HTTPS 与 404 配置，使用 OSS 直接托管，暂未接入 CDN。更新时上传新构建产物到原路径，再核对受影响页面、资源与错误页。
 
 ## 上线验收
 
