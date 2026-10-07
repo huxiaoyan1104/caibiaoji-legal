@@ -2,8 +2,8 @@
 title: 安全更新插件
 description: 按当前安装方式更新采标集，并检查版本、工作台和已有归档记录。
 category: 安装、升级与数据维护
-updatedAt: '2026-09-23'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: 安装采标集, link: /manual/install/ }
 next: { text: 本地数据与文件保存, link: /manual/local-data/ }
@@ -23,7 +23,7 @@ import { withBase } from 'vitepress'
 
 <div class="custom-block warning archive-notice" role="note" aria-labelledby="update-notice-title">
   <p class="custom-block-title" id="update-notice-title"><svg class="archive-notice-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5" /><circle cx="12" cy="16.5" r=".75" fill="currentColor" stroke="none" /></svg>更新时，请保留当前安装</p>
-  <p>请在原来的浏览器和用户资料中，沿用当前安装方式更新。<strong>不要先卸载插件，也不要清除扩展数据</strong>，以免丢失当前浏览器中的归档历史和设置。</p>
+  <p>请在原来的浏览器和用户资料中，沿用当前安装方式更新。<strong>不要先卸载插件，也不要清除扩展数据</strong>，以免丢失本机设置和任务恢复信息。</p>
 </div>
 
 <details class="custom-block details" open>
@@ -32,6 +32,10 @@ import { withBase } from 'vitepress'
 为了便于更新后核对，可以提前记下当前<span class="product-name product-name--after-text">采标集</span>账号。如果调整过 **“ZIP 命名规则”**，也可以将设置页面截图留存，方便之后对照。
 
 </details>
+
+::: info 升级到 2.0.0 前
+新版将主动归档的记录和公告页面快照保存到当前账号，供联网查看；附件、Excel 清单和完整 ZIP 归档包仍在本机。旧版本仅在本机的历史不会迁移或显示在新版列表中，请保存好需要长期留存的实际归档包。信息处理方式见[隐私政策](/privacy/)与[服务协议](/terms/)。
+:::
 
 ## 2. 查看当前版本，确认安装方式 {#check-version}
 
@@ -171,13 +175,13 @@ import { withBase } from 'vitepress'
 
 1. **版本符合预期。** 在扩展管理页，或管理页的“关于 → 版本信息”中，确认“当前版本”与这次安装的版本一致。
 2. **工作台可以使用。** 页面能正常打开并显示当前公告的识别状态；需要重新登录时，使用更新前的<span class="product-name product-name--after-text">采标集</span>账号。
-3. **已有记录可以查看。** 进入“归档历史”，找到一条之前的记录，打开详情核对项目和归档结果；如果原来没有记录，可跳过这一项。
+3. **云端记录可以查看。** 升级至 2.0.0 后，登录原账号并联网，进入“归档历史”，核对该账号已经保存的云端记录。旧版本仅保存在本机的历史不会迁移或显示；尚无云端记录时，可跳过这一项。
 4. **个人设置符合预期。** 如果此前修改过“ZIP 命名规则”，进入个人中心，打开该设置，与更新前保留的内容核对。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
-- **历史记录没有显示：** 先确认仍使用原来的浏览器、浏览器用户资料和<span class="product-name product-name--after-text">采标集</span>账号，再检查是否设置了搜索或筛选条件。不要通过反复卸载或清除数据来尝试找回记录；具体排查见[本地数据与文件保存](/manual/local-data/)。
+- **历史记录没有显示：** 先确认登录原<span class="product-name product-name--after-text">采标集</span>账号、能连接服务器，再检查搜索或筛选条件，并区分云端记录与旧版本地历史。不要通过反复卸载或清除数据来尝试找回记录；具体排查见[本地数据与文件保存](/manual/local-data/)。
 - **能看到记录，但“在文件夹中显示”找不到文件：** 先到原保存位置或后来移动到的文件夹查找。文件位置与浏览器下载记录也会影响这个入口，不能仅凭这一现象判断更新是否成功。
 - **仍有异常：** 保留当前安装和文件，[联系技术支持](/manual/support/)并说明浏览器、安装方式、更新前后版本及具体提示，便于核对问题。
 

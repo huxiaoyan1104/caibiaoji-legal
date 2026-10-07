@@ -2,8 +2,8 @@
 title: 更新日志
 description: 查看采标集各版本的功能变化、使用改进和修复，以及对应的安装与更新指引。
 category: 问题与支持
-updatedAt: '2026-09-24'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 包含 v2.0.0 发布准备说明
 reviewStatus: user-approved
 prev: { text: 联系技术支持, link: /manual/support/ }
 next: { text: 合法使用说明, link: /manual/responsible-use/ }
@@ -12,6 +12,26 @@ next: { text: 合法使用说明, link: /manual/responsible-use/ }
 # 更新日志
 
 <p class="lead">这里记录<span class="product-name product-name--after-text">采标集</span>各版本中与使用有关的变化，帮助你了解新增功能、体验改进和问题修复，并找到对应的使用方法与更新入口。</p>
+
+## v2.0.0（发布准备中） {#v2-0-0}
+
+本版本增加了账号云端归档历史。各安装渠道尚未统一发布，是否能够更新，请以对应商店或安装入口显示的版本为准。
+
+### 在同一账号下查看归档记录 {#cloud-history}
+
+主动归档后，本次记录和可用的公告页面快照会保存到云端。在其他设备安装 2.0.0 并登录同一账号后，可以联网查看公告来源、项目信息、当次结果、文件清单和快照。查找方法见[查看归档历史](/manual/history/)。
+
+附件、Excel 清单和完整 ZIP 归档包仍保存在本机，不随记录上传。云端记录不能恢复原设备中的下载文件，ZIP 命名设置也不会自动同步。
+
+### 归档前查看保存范围 {#cloud-notice}
+
+工作台会在开始按钮前说明云端与本机各自保存的内容，并提供隐私政策入口。右键菜单显示为 **“一键归档下载（记录与快照存云端）”**；需要登录时，页面会说明登录后继续归档。不增加额外的确认步骤。
+
+### 从旧版本更新前，请留意 {#cloud-upgrade}
+
+旧版本仅保存在本机的归档历史，不会上传、迁移或显示在新版云端列表中。请保存好需要留存的实际归档包。退出登录或卸载插件不会自动删除云端记录；当前没有单条删除或清空云端历史的自助入口，个人信息相关申请方式见[隐私政策](/privacy/#section-7)。
+
+完整的数据范围见[本地数据与文件保存](/manual/local-data/)；更新方法见[安全更新插件](/manual/update/)。
 
 ## v1.5.0 {#v1-5-0}
 
@@ -44,13 +64,13 @@ next: { text: 合法使用说明, link: /manual/responsible-use/ }
 
 修复了与部分浏览器扩展同时使用时，公告原文保存失败、归档无法完成的问题。如果仍遇到归档失败，可以先按[常见问题](/manual/troubleshooting/#archive-failed)中的步骤检查，再根据当前提示[联系技术支持](/manual/support/)。
 
-## 获取与使用这个版本 {#get-version}
+## 安装与更新 {#get-version}
 
 根据当前安装情况，选择对应的操作。已经安装时，可以先在浏览器的扩展管理页找到<span class="product-name product-name--punctuation product-name--after-text">采标集</span>，查看版本号：
 
 - **还没有安装：** 按[安装采标集](/manual/install/)选择浏览器，完成安装。
 - **正在使用旧版本：** 按[安全更新插件](/manual/update/)完成更新前的准备，并沿用当前安装方式更新。
-- **已经是 v1.5.0：** 无需重复安装，可以直接打开上面的功能教程，按需要设置密码或调整命名规则。
+- **已经是所在渠道提供的最新版本：** 无需重复安装，可以按当前版本对应的教程继续使用。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>

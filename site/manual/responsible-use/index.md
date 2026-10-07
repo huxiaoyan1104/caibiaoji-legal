@@ -2,8 +2,8 @@
 title: 合法使用说明
 description: 在归档前确认资料用途与使用范围，按来源网站要求获取资料，并在保存、使用和转交时保护资料及个人信息。
 category: 协议与使用规则
-updatedAt: '2026-09-24'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: 更新日志, link: /manual/release-notes/ }
 next: { text: 隐私政策, link: /privacy/ }
@@ -58,12 +58,12 @@ next: { text: 隐私政策, link: /privacy/ }
 
 保存的资料中如有个人信息、商业秘密或其他受保护内容，请放在符合单位或项目要求的存储位置，并限制无关人员访问。使用共享文件夹或网盘时，确认哪些人可以查看、下载，避免误设为公开分享。
 
-资料的保留期限和删除方式，应按适用规定、业务需要及保密要求确定。目的完成后，请检查是否仍需依法留存，再处理不再需要的副本。文件与浏览器记录的保存方式见[本地数据与文件保存](/manual/local-data/)。
+资料的保留期限和删除方式，应按适用规定、业务需要及保密要求确定。目的完成后，请检查是否仍需依法留存，再处理不再需要的副本。文件与云端记录的保存方式见[本地数据与文件保存](/manual/local-data/)。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
-公告正文、截图、附件和归档包在你的设备中处理，不会作为归档内容上传至<span class="product-name product-name--punctuation product-name--after-text">采标集</span>服务器。你自行复制到网盘或发送给他人时，仍需确认该存储位置或接收方符合资料的使用要求。具体信息处理方式见[隐私政策](/privacy/#section-2)。
+在 2.0.0 中，主动归档的记录和 JPEG 公告页面快照会保存到当前账号的云端空间；快照可能包含公告中展示的联系人等信息。原始附件、Excel 清单和完整 ZIP 归档包留在本机，不随记录上传。你自行复制到网盘或发送给他人时，仍需确认该存储位置或接收方符合资料的使用要求。具体信息处理方式见[隐私政策](/privacy/#section-2)。
 
 </details>
 

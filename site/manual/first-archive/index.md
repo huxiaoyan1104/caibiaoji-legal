@@ -2,8 +2,8 @@
 title: 第一次归档
 description: 跟着步骤发起归档，找到并核对你的第一份 ZIP 归档包。
 category: 开始使用
-updatedAt: '2026-09-23'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: 认识采标集, link: /manual/ }
 next: { text: 安装采标集, link: /manual/install/ }
@@ -69,12 +69,9 @@ import ArchiveProgressDemo from '../../.vitepress/theme/ArchiveProgressDemo.vue'
 
 ## 2. 确认页面，点击“一键归档下载” {#archive-workbench}
 
-登录完成后，回到工作台，确认当前仍打开着要保存的公告。当工作台显示 **“当前页面可归档”** 时，点击 **“一键归档下载”**，就能发起本次归档。
+登录完成后，回到工作台，确认当前仍打开着要保存的公告。开始按钮上方会说明保存位置：**归档记录和公告页面快照保存到云端，附件、Excel 清单和 ZIP 归档包仍保存在本机。** 你可以通过旁边的[隐私政策](/privacy/)了解具体范围。
 
-<figure class="doc-shot">
-  <a :href="withBase('/images/workbench-ready.webp')" target="_blank" rel="noopener"><img src="/images/workbench-ready.webp" alt="采标集工作台显示当前页面可归档，下方为一键归档下载按钮" width="1600" height="460" /></a>
-  <figcaption>先确认“当前页面可归档”，再点击“一键归档下载”。点击图片可查看大图。</figcaption>
-</figure>
+当工作台显示 **“当前页面可归档”** 时，点击 **“一键归档下载”**，就能发起本次归档。登录同一账号后，可以在其他设备查看云端记录与可用快照；实际归档包仍需自行保管和复制。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
@@ -122,20 +119,13 @@ ZIP 归档包默认保存在**浏览器下载目录下的 `采标集` 文件夹*
 
 ## 熟悉流程后，也可以从网页右键发起 {#archive-context-menu}
 
-完成第一次归档后，处理下一份公告时，还可以直接在支持的公告详情页点击鼠标右键，展开<span class="product-name product-name--after-text">采标集</span>菜单，再选择 **“一键归档下载”**。
-
-<figure class="doc-shot extension-entry-shot">
-  <a :href="withBase('/images/chrome-context-menu-entry.svg')" target="_blank" rel="noopener" aria-label="查看右键归档入口大图">
-    <img src="/images/chrome-context-menu-entry.svg" alt="Chrome 右键菜单中展开采标集，右侧子菜单显示打开采标集工作台和一键归档下载。" width="960" height="275" loading="lazy" />
-  </a>
-  <figcaption><span>在右键菜单中展开采标集，再选择“一键归档下载”。</span><span>图中为 Chrome 示例。点击图片可查看大图。</span></figcaption>
-</figure>
+完成第一次归档后，处理下一份公告时，还可以直接在支持的公告详情页点击鼠标右键，展开<span class="product-name product-name--after-text">采标集</span>菜单，再选择 **“一键归档下载（记录与快照存云端）”**。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
 - 如果工作台已经打开，直接在其中查看进度；如果没有显示工作台，网页右下角会显示本次任务的提示，点击 **“查看详情”** 即可打开归档详情。之后同样等待“已保存”，再定位 ZIP 归档包并核对资料。
-- 若提示需要登录，点击 **“登录并继续”**，完成登录后，<span class="product-name">采标集</span>会继续处理这份公告。
+- 若提示需要登录，点击 **“登录并继续”**。登录页会说明云端保存范围及登录后继续归档；完成登录后，<span class="product-name">采标集</span>会继续处理这份公告。
 - 右键菜单中的“打开采标集工作台”只打开工作台，不会发起归档。
 - 关闭网页右下角的提示只会隐藏提示，不会取消正在进行的任务。
 

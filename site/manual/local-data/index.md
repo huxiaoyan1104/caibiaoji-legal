@@ -1,9 +1,9 @@
 ---
 title: 本地数据与文件保存
-description: 分清浏览器中的记录与电脑中的文件，找到并留存归档资料，了解清理或更换环境的影响。
+description: 分清云端归档记录、本机设置与电脑中的文件，了解查找、留存、清理和换设备后的影响。
 category: 安装、升级与数据维护
-updatedAt: '2026-09-23'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: 安全更新插件, link: /manual/update/ }
 next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
@@ -11,31 +11,33 @@ next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
 
 # 本地数据与文件保存
 
-<p class="lead">归档历史保存在浏览器中，ZIP 归档包保存在电脑文件夹里。想长期留存资料，需要保存好实际文件；卸载插件、清理数据或更换电脑前，也要先了解本地记录会受到什么影响。</p>
+<p class="lead">归档记录和可用的公告快照保存在云端，ZIP 归档包保存在电脑文件夹里，命名设置仍保存在当前浏览器中。本篇说明这三类内容的区别，以及清理或更换设备前需要保留什么。</p>
 
 ## 1. 分清记录与文件的保存位置 {#where-data-is-saved}
 
-完成一次归档后，<span class="product-name">采标集</span>会在当前浏览器中留下归档记录，并将 ZIP 归档包保存到电脑。两者的用途不同：
+在 2.0.0 中，<span class="product-name">采标集</span>会将你主动发起的归档记录保存到当前账号，并在归档成功后将 ZIP 归档包保存到电脑。不同内容的用途如下：
 
 <p class="table-hint">左右滑动表格，查看保存位置与用途。</p>
 
 | 内容 | 保存在哪里 | 用来做什么 |
 | --- | --- | --- |
-| 归档历史、公告快照 | 当前浏览器中 | 回看归档结果、来源页面、文件清单和公告快照 |
+| 归档记录、可用公告快照 | 当前账号的云端空间 | 登录同一账号并联网后，回看结果、来源页面、文件清单和快照 |
 | ZIP 命名设置 | 当前浏览器中 | 决定后续生成的 ZIP 归档包如何命名 |
 | ZIP 归档包及解压后的资料 | 电脑文件夹中 | 打开清单、公告原文和附件，按项目整理或复制留存 |
 
-在当前浏览器中登录<span class="product-name product-name--after-text">采标集</span>后，你可以查看这个账号在这里保存的归档历史，并继续使用已保存的命名设置。不过，这些内容保存在当前浏览器里，**换到另一台电脑或另一个浏览器后，即使登录同一账号，也不会自动同步过去。**
+换到另一台电脑或浏览器后，登录同一<span class="product-name product-name--after-text">采标集</span>账号，可以联网查看已保存的云端记录和可用快照。**附件、Excel 清单和完整 ZIP 归档包不会随记录上传，需要自行复制实际文件；命名设置也需要重新设置。**
 
 已经保存到电脑的文件则可以直接通过系统文件管理器打开。历史记录中显示“已保存”，说明当时已经完成保存；这条记录不能代替实际文件，也不能恢复后来被删除的 ZIP 归档包。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
-- **浏览器用户资料与插件账号不同。** 例如，同一台电脑上的两个 Chrome 用户资料，各自使用独立的浏览器环境。即使登录同一个<span class="product-name product-name--after-text">采标集</span>账号，也不会共用这两份环境中的归档历史。
-- **退出登录不会删除已有文件和本地归档记录。** 切换账号后显示的是当前账号的记录；要查看原账号的历史，需要回到原浏览器环境，并登录归档时使用的账号。
+- **旧版本地历史不迁移。** 1.5／1.6 仅保存在本机的归档历史，不会上传或显示在 2.0.0 的云端列表中。升级前请保存好需要长期留存的实际归档包。
+- **退出登录不会删除云端记录或已下载文件。** 重新登录原账号后，可以继续查看它的云端历史；切换账号后显示的是另一个账号的记录。
 
 </details>
+
+云端记录和仍被有效记录引用的快照，当前不会按记录年龄自动淘汰，也没有单条删除或清空历史的自助入口。个人信息查阅、更正、删除或注销请求，按[隐私政策](/privacy/#section-7)联系支持邮箱办理。后台清理无效或不再被引用的快照，不等于删除正常归档记录。
 
 ## 2. 找到 ZIP 归档包，留存需要的资料 {#keep-your-files}
 
@@ -63,7 +65,7 @@ next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
 
 需要长期留存时，可以在另一块存储设备或单位允许的存储位置再保留一份副本。资料中含有采购、客户等敏感信息时，按相应的授权和保密要求选择保存位置。
 
-**文件副本不能还原插件中的历史和设置。** 当前<span class="product-name product-name--after-text">采标集</span>没有提供将全部本地历史和设置导出、再导入恢复的功能。将 ZIP 归档包复制到新电脑后，可以打开其中的资料，但不会在新环境中生成原来的历史记录。
+**复制文件与查看云端历史是两件事。** 将 ZIP 归档包复制到新电脑后，可以直接打开其中的资料，不会因此创建一条云端记录。当前没有将旧版本地历史或命名设置导出、再导入新版的功能。
 
 ## 3. 清理或更换环境前，确认会影响什么 {#before-changes}
 
@@ -71,7 +73,7 @@ next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
 
 <div class="custom-block warning archive-notice" role="note" aria-labelledby="local-data-notice-title">
   <p class="custom-block-title" id="local-data-notice-title"><svg class="archive-notice-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5" /><circle cx="12" cy="16.5" r=".75" fill="currentColor" stroke="none" /></svg>卸载或清除扩展数据前，请先确认</p>
-  <p>卸载插件、清除扩展数据或删除浏览器用户资料，会删除保存在当前浏览器中的归档历史、公告快照和设置。<strong>重新安装并登录同一账号，不能从服务器恢复这些本地记录。</strong>如果还需要回看原历史，请保留当前安装及浏览器用户资料。</p>
+  <p>卸载插件、清除扩展数据或删除浏览器用户资料，会删除本机设置、缓存和任务恢复信息。<strong>这些操作不会自动删除云端记录，也不会删除已下载到电脑的 ZIP 归档包。</strong>请等归档任务结束，并保存好实际文件后再操作。</p>
 </div>
 
 <p class="table-hint">左右滑动表格，查看不同操作的影响。</p>
@@ -97,13 +99,13 @@ next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
     </tr>
     <tr class="data-impact-important">
       <td>卸载插件、清除扩展数据或删除浏览器用户资料</td>
-      <td><strong class="data-impact-risk">会删除</strong>本地历史、快照及设置</td>
-      <td>保存必要文件；仍需原记录时，保留原环境</td>
+      <td><strong class="data-impact-risk">会删除</strong>本机设置、缓存和任务恢复信息；云端记录及已下载文件仍保留</td>
+      <td>等当前任务结束，保存必要文件；旧版本地历史不在云端恢复范围内</td>
     </tr>
     <tr class="data-impact-important">
       <td>换电脑、浏览器或浏览器用户资料</td>
-      <td>新环境<strong class="data-impact-risk">不会自动显示</strong>原来的历史和命名设置</td>
-      <td>复制需要的实际文件；仍需回看记录时保留旧环境</td>
+      <td>同一账号联网后可查看云端历史；命名设置和实际文件<strong class="data-impact-risk">不会自动同步</strong></td>
+      <td>记下原账号，复制实际归档包，并在新环境重新设置命名规则</td>
     </tr>
   </tbody>
 </table>
@@ -111,8 +113,8 @@ next: { text: 卸载、重装与换设备, link: /manual/reinstall-migration/ }
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
-- **只是更新插件：** 请按[安全更新插件](/manual/update/)操作，不要先卸载。切换文件夹版、商店版等安装渠道后，原来的历史和设置不一定能继续使用；需要切换时，请先[联系技术支持](/manual/support/)。
-- **历史暂时没有显示：** 先确认电脑、浏览器用户资料和<span class="product-name product-name--after-text">采标集</span>账号与归档时一致，再检查关键词、状态和时间筛选。如果本地数据已经被清除，仍可到电脑文件夹中查找此前保存的 ZIP 归档包。
+- **只是更新插件：** 请按[安全更新插件](/manual/update/)操作，不要先卸载。切换安装渠道前，应确认版本、原账号及本机设置的处理方式；需要协助时，请先[联系技术支持](/manual/support/)。
+- **历史暂时没有显示：** 先确认使用 2.0.0、登录原账号且能连接服务器，再检查关键词、状态和时间筛选。旧版本仅在本机的记录不会出现在云端列表中；实际 ZIP 归档包仍可到原保存位置查找。
 - **准备使用清理工具：** 普通网页缓存、浏览历史、下载记录和扩展数据是不同的清理项目。先看清工具将删除什么，不要将“清除所有数据”当作常规排错步骤。
 
 </details>

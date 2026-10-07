@@ -2,8 +2,8 @@
 title: 卸载、重装与换设备
 description: 卸载前保留需要的资料，按当前用途选择重装或在新设备安装，再确认可以继续使用。
 category: 安装、升级与数据维护
-updatedAt: '2026-09-23'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: 本地数据与文件保存, link: /manual/local-data/ }
 next: { text: 支持范围与权限, link: /manual/supported-sites/ }
@@ -22,8 +22,8 @@ import { withBase } from 'vitepress'
 如果当前还有归档任务正在下载附件、生成归档包或保存文件，请等到显示 **“已保存”** 后再操作。
 
 <div class="custom-block warning archive-notice" role="note" aria-labelledby="reinstall-notice-title">
-  <p class="custom-block-title" id="reinstall-notice-title"><svg class="archive-notice-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5" /><circle cx="12" cy="16.5" r=".75" fill="currentColor" stroke="none" /></svg>卸载前，请确认不再需要原来的本地记录</p>
-  <p>卸载会删除当前浏览器中的归档历史、公告快照和命名设置。<strong>重新安装并登录同一账号，也不能恢复这些本地记录。</strong>如果还需要回看原历史，请保留原来使用的浏览器环境及其中的插件。</p>
+  <p class="custom-block-title" id="reinstall-notice-title"><svg class="archive-notice-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v5" /><circle cx="12" cy="16.5" r=".75" fill="currentColor" stroke="none" /></svg>卸载前，请确认任务结束并保留必要资料</p>
+  <p>卸载会删除本机设置、缓存和任务恢复信息，<strong>不会自动删除 2.0.0 已保存的云端记录，也不会删除下载到电脑的归档包。</strong>旧版本仅保存在本机的历史不会迁移到新版；需要留存的资料，请保存实际归档包。</p>
 </div>
 
 接下来，按需要完成准备：
@@ -98,7 +98,7 @@ import { withBase } from 'vitepress'
 
 ### 在原浏览器重装：卸载后重新安装 {#reinstall-here}
 
-做好上面的准备，确认不再需要原来的本地记录后，先按[卸载步骤](#remove-extension)移除插件。随后沿用原来的安装方式，按[安装采标集](/manual/install/#choose-browser)完成安装，再继续下方的[安装后检查](#check-after-install)。
+做好上面的准备，确认当前任务已结束后，先按[卸载步骤](#remove-extension)移除插件。随后沿用原来的安装方式，按[安装采标集](/manual/install/#choose-browser)完成安装，再继续下方的[安装后检查](#check-after-install)。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
@@ -111,21 +111,22 @@ import { withBase } from 'vitepress'
 
 换到另一台电脑、另一个浏览器或新的浏览器环境时，**可以直接在新环境安装，无需先卸载旧插件。** 按[安装采标集](/manual/install/#choose-browser)完成安装，再继续下方检查。
 
-新环境不会自动显示原来的归档历史和命名设置。如果还需要回看旧记录，请保留原电脑上的浏览器环境及其中的插件。已经复制过来的 ZIP 归档包可以直接打开，但不会因此出现在新环境的归档历史中。
+安装 2.0.0 后，登录原账号并连接服务器，可以查看该账号已保存的云端历史和可用快照。命名设置需要重新设置，归档包和附件需要自行复制；旧版本仅在本机的历史不会迁移。
 
 ## 3. 安装完成后，确认可以继续使用 {#check-after-install}
 
 重新安装或在新环境安装完成后，依次检查：
 
 1. **打开工作台，登录原账号。** 点击浏览器中的<span class="product-name product-name--after-text">采标集</span>图标，使用之前的邮箱登录。具体操作见[第一次归档：打开工作台，完成登录](/manual/first-archive/#open-workbench)。
-2. **重新设置需要的命名方式。** 如果之前调整过 **“ZIP 命名规则”**，照着留存的设置重新选择；没有调整过时，可以继续使用默认规则。
-3. **换电脑后，检查复制过来的资料是否完整、能否打开。** 在新电脑上找到复制过来的 ZIP 归档包，解压后打开清单、公告原文和附件，确认需要的文件都在，并且可以正常查看。
+2. **核对云端历史。** 联网后打开“归档历史”，确认显示的是原账号已保存的记录；旧版本地历史不在本次显示范围内。
+3. **重新设置需要的命名方式。** 如果之前调整过 **“ZIP 命名规则”**，照着留存的设置重新选择；没有调整过时，可以继续使用默认规则。
+4. **换电脑后，检查复制过来的资料是否完整、能否打开。** 在新电脑上找到复制过来的 ZIP 归档包，解压后打开清单、公告原文和附件，确认需要的文件都在，并且可以正常查看。
 
 <details class="custom-block details" open>
 <summary>补充说明</summary>
 
-- **旧电脑上的插件可以先保留。** 如果还需要查看以前的归档记录，就不要卸载旧电脑上的插件；等需要的资料已复制好、也不再需要查看旧归档记录时，再按[卸载步骤](#remove-extension)处理。
-- **旧浏览器提示登录失效：** 在新环境登录同一账号后，旧登录会失效。回到旧环境查看历史时，按提示重新登录即可；保存在那里的历史不会因此删除。
+- **旧电脑上的插件可以先保留。** 先确认需要的实际文件已经复制且能打开；如果还需要在旧版本中回看本地历史，请保留旧浏览器环境。
+- **旧浏览器提示登录失效：** 在新环境登录同一账号后，旧登录会失效。回到旧环境查看历史时，按提示重新登录即可；已保存的云端记录不会因此删除。
 - **工作台无法打开或登录失败：** 先保留当前安装，记下浏览器、安装方式和具体提示，再[联系技术支持](/manual/support/)，避免通过反复卸载尝试解决。
 
 </details>

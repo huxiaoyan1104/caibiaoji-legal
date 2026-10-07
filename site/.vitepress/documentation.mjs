@@ -10,7 +10,7 @@ export const documentationGroups = [
   { title: '安装、升级与数据维护', items: [
     { title: '安装采标集', link: '/manual/install/', ready: true, summary: 'Chrome、Edge、360 的安装入口，启用插件与确认安装方式。' },
     { title: '安全更新插件', link: '/manual/update/', ready: true, summary: '按商店、360 离线包或文件夹安装方式更新，并核对版本、工作台和已有记录。' },
-    { title: '本地数据与文件保存', link: '/manual/local-data/', ready: true, summary: '分清账号、浏览器记录和电脑文件；说明清理风险与文件保存方法。' },
+    { title: '本地数据与文件保存', link: '/manual/local-data/', ready: true, summary: '分清云端记录、本机设置和电脑文件；说明清理影响与文件保存方法。' },
     { title: '卸载、重装与换设备', link: '/manual/reinstall-migration/', ready: true, summary: '保留必要资料，按需卸载、重装或在新设备安装，再确认可以继续使用。' },
   ] },
   { title: '日常归档', items: [
@@ -31,7 +31,7 @@ export const documentationGroups = [
   ] },
   { title: '协议与使用规则', items: [
     { title: '合法使用说明', link: '/manual/responsible-use/', ready: true, summary: '确认资料使用范围，遵守原网站访问要求，核对并保管归档，转交前检查提供范围。' },
-    { title: '隐私政策', link: '/privacy/', ready: true, summary: '完整隐私政策，保留原版本、生效日期与章节链接。' },
+    { title: '隐私政策', link: '/privacy/', ready: true, summary: '说明账号、云端归档记录与快照、本机文件及个人信息处理方式。' },
     { title: '服务协议', link: '/terms/', ready: true, summary: '完整服务协议，说明服务范围、账号权益和双方责任。' },
     { title: '退款协议', link: '/refund/', ready: true, summary: '完整退款协议，说明申请条件、核验规则和申请方式。' },
   ] },

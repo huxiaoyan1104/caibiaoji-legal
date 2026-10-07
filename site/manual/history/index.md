@@ -2,8 +2,8 @@
 title: 查看归档历史
 description: 通过关键词、状态和时间找到归档记录，查看当次处理结果，并定位已经保存的 ZIP 归档包。
 category: 日常归档
-updatedAt: '2026-09-23'
-appliesTo: 适用于 v1.5
+updatedAt: '2026-10-07'
+appliesTo: 适用于 v2.0.0
 reviewStatus: user-approved
 prev: { text: ZIP 命名规则, link: /manual/naming/ }
 next: { text: 登录与密码, link: /manual/account/ }
@@ -19,7 +19,7 @@ import { withBase } from 'vitepress'
 
 ## 1. 从工作台进入归档历史 {#open-history}
 
-在你之前归档的浏览器里打开<span class="product-name product-name--after-text">采标集</span>，登录当时使用的账号，再点击工作台底部的 **“归档历史”**。
+在安装了 2.0.0 的浏览器中打开<span class="product-name product-name--after-text">采标集</span>，登录归档时使用的账号，再点击工作台底部的 **“归档历史”**。联网后，可以查看这个账号已保存的云端记录与可用公告快照；旧版本仅保存在本机的历史不会迁移或显示在这里。
 
 列表中，最近发起的归档记录排在前面。每张记录卡片会显示公告标题、项目编号或标段信息、归档状态和时间，方便你先辨认要找的项目。
 
@@ -28,7 +28,7 @@ import { withBase } from 'vitepress'
 
 - **还没有归档记录：** 可以点击 **“去工作台归档”**，按[第一次归档](/manual/first-archive/)完成一次操作，再回到这里查看结果。
 - **当前任务仍在进行中：** 先到工作台查看当前任务的进度，等处理结束后，再到历史列表查看结果。
-- **换了电脑、浏览器或账号：** 请先确认登录的是归档时使用的账号。换到其他电脑或浏览器后，即使登录同一账号，也不会显示原来的记录；需要回看时，请在原来的浏览器中查看。记录的保存范围与清理影响，见[本地数据与文件保存](/manual/local-data/)。
+- **换了电脑、浏览器或账号：** 登录同一账号后，可以联网查看其云端历史；登录另一个账号时，显示的是另一个账号的记录。云端记录不包含完整 ZIP 归档包或附件，换设备后需要自行复制实际文件。保存范围与清理影响，见[本地数据与文件保存](/manual/local-data/)。
 
 </details>
 
@@ -55,7 +55,7 @@ import { withBase } from 'vitepress'
   <a :href="withBase('/images/archive-history-list.svg')" target="_blank" rel="noopener noreferrer" aria-label="查看归档历史界面大图">
     <img :src="withBase('/images/archive-history-list.svg')" alt="归档历史列表上方有搜索框、状态和时间筛选框，下方显示一条已完成的归档记录" width="1383" height="666" loading="lazy" />
   </a>
-  <figcaption>用关键词、状态和时间查找记录，再点击记录查看详情。点击图片可查看大图。</figcaption>
+  <figcaption>旧版列表示例，用于说明搜索和筛选入口；2.0.0 展示当前账号的云端记录。点击图片可查看大图。</figcaption>
 </figure>
 
 <details class="custom-block details" open>
@@ -97,7 +97,7 @@ import { withBase } from 'vitepress'
 
 ## 4. 从已完成记录找到 ZIP 归档包 {#locate-archive-file}
 
-确认详情顶部显示 **“已保存”** 后，点击 **“在文件夹中显示”**，浏览器会在电脑上定位对应的 ZIP 归档包。
+确认详情顶部显示 **“已保存”** 后，若当前浏览器仍有对应的下载记录，可点击 **“在文件夹中显示”** 定位 ZIP 归档包。其他设备上的云端历史可以显示记录和文件清单，但不能定位或恢复原设备中的下载文件。
 
 找到文件后，可以解压并查看清单、网页原文和附件。具体核对方法见[归档包与内容核对](/manual/archive-output/)。
 
@@ -105,6 +105,6 @@ import { withBase } from 'vitepress'
 <summary>补充说明</summary>
 
 - **没有定位入口，或提示无法定位原归档文件：** 先到原保存位置或移动后的文件夹中查找。对应的浏览器下载记录被清理后，“在文件夹中显示”无法再定位该文件，但清理下载记录本身不会删除已经保存的 ZIP 归档包。
-- **ZIP 文件已经被删除：** 历史记录不能恢复该文件，也不提供云端备份。文件保存与记录之间的区别，见[本地数据与文件保存](/manual/local-data/)。
+- **ZIP 文件已经被删除：** 云端历史不保存完整 ZIP 归档包，不能恢复该文件。文件保存与记录之间的区别，见[本地数据与文件保存](/manual/local-data/)。
 
 </details>
